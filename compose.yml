@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  sing-box:
+    image: ghcr.io/sagernet/sing-box:v1.1-beta2
+    container_name: sing-box
+    network_mode: "host"
+    volumes:
+      - config/config.json:/etc/sing-box/config.json
+    restart: unless-stopped
+    command: " -c /etc/sing-box/config.json run"
