@@ -14,7 +14,7 @@
     {
       "type": "shadowtls",
       "tag": "shadowtls-out",
-      "server": "0.0.0.0",
+      "server": "Your server ip",
       "server_port": 443,
       "version": 2,
       "tls": {
