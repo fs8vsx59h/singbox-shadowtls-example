@@ -1,0 +1,23 @@
+{
+    "inbounds": [
+      {
+        "type": "shadowtls",
+        "listen": "::",
+        "listen_port": 443,
+        "version": 2,
+        "handshake": {
+          "server": "microsoft.com",
+          "server_port": 443
+        },
+        "detour": "shadowsocks-in"
+      },
+      {
+        "type": "shadowsocks",
+        "tag": "shadowsocks-in",
+        "listen": "127.0.0.1",
+        "method": "2022-blake3-aes-128-gcm",
+        "password": "use your openssl generate a base64 key"
+      }
+    ]
+  }
+  
