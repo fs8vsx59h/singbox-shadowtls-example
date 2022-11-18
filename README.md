@@ -22,3 +22,8 @@ docker buildx build -t sstls:latest .
 docker run sstls:latest
 
 DONE
+then use  
+```shell
+docker logs CONTAINER
+```
+to check what's your password
