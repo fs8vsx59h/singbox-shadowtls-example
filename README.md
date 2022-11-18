@@ -9,6 +9,16 @@
   ```shell
   docker compose up -d
   ```
-  
-  
- DONE
+ DONE   
+ 
+ 
+If you are a new linux user or just too lazy to edit configrations ,there is an auto deploy way.  (after your docker installed)
+Run these commands:  
+
+apt install git 
+git clone https://github.com/fs8vsx59h/singbox-shadowtls-example.git  
+cd singbox-shadowtls-example  
+docker buildx build -t sstls:latest .
+docker run sstls:latest
+
+DONE
