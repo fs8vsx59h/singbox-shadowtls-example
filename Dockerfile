@@ -5,4 +5,4 @@ COPY --chmod=777 ./mkconfig.sh /mkconfig.sh
 RUN     apk update \
 &&  apk add openssl
 ENTRYPOINT ["/bin/bash"]
-CMD [ "-c","/mkconfig.sh && /usr/local/bin/sing-box run -c /etc/shadowtls/config.json" ]
+CMD [ "-c","/mkconfig.sh && cat /etc/shadowtls/config.json && /usr/local/bin/sing-box run -c /etc/shadowtls/config.json" ]
